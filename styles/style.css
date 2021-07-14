@@ -1,0 +1,296 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+
+
+.top-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.head-contain{
+    margin-left: 150px;
+}
+
+/* header css start*/
+.top-container{
+    background-color: #2D25A0;
+    width: 99%;
+}
+
+h1{
+    color: white;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: left;
+
+}
+/* button css start */
+
+.btn{
+    font-size: 16px;
+    color: white;
+    height: 44px;
+    width: 168px;
+    left: 156px;
+    top: 464px;
+    padding: 10px, 24px, 10px, 24px;
+    background-color: #E02C6D;
+    border:0px;
+}
+
+.btn:hover .fas {
+    transform: translate(10px);
+}
+
+.fas {
+    position: relative;
+    transition: transform 01s ease ;
+}
+/* button css end */
+
+.top-container:hover .kick {
+    transform: rotate(10deg);
+    transform-origin: top right;
+}
+
+.kick {
+  
+    position: relative;
+    transition: transform 01s ease 0.1s;
+    top: 85px;
+}
+
+.top-container:hover .ball {
+    transform: translate(-300px, -100px);
+}
+
+.ball {
+    position: relative;
+   transition: transform 01s ease-out 0.1s;
+   top: -127px;
+   left: 13px;
+}
+/* header css end*/
+
+/* container start */
+.container{
+    margin-top: 70px;
+}
+
+
+.all-players{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   width: 80%;
+   grid-gap: 34px 17px;
+   margin-left: 144px
+}
+
+.player{
+    height: 456px;
+    width: 300px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 30px rgb(219, 219, 219);
+}
+
+.player > img{
+    height: 256px;
+    width: 300px;
+}
+.player-name{
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 40px; 
+}
+
+.player > p{
+    color: #6C6C6C;
+}
+
+/* highlight section start */
+.highlight{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 120px;
+    grid-gap: 140px;  
+}
+
+.highlight > .head-contain>h1{
+   color:black; 
+}
+/* highlight section end */
+
+/* calendar start */
+.calendar {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: 2em repeat(5, 1fr);
+    margin-right: 152px;
+    margin-top: 100px;
+}
+
+.date,
+.day {
+    background-color: #E02C6D;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.other-month,
+.day {
+    background-color: wheat;
+}
+
+.day {
+    font-size: 1.05em;
+}
+
+/* calendar end */
+
+
+
+/* footer start */
+
+.footer{
+
+    width: 100%;
+    background-color: white;
+    margin-top: 130px;
+}
+
+.footer img{
+    height: 110px;
+    width: 483px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-div>p{
+text-align: center;
+}
+
+.social-icon{
+    text-align: center;  
+}
+
+ .fab {
+    height: 24px;
+    width: 22px;
+    font-size: 26px;
+    color: #E7E7E8;
+    background-color: #949494;
+    border-radius: 30px;  
+}
+
+/* footer end */
+
+/* madia queres */
+
+@media only screen and (max-width: 590px){
+
+.top-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.head-contain{
+    margin-left: 110px;
+}
+.top-container{
+    background-color: #2D25A0;
+    width: 99%;
+}
+h1{
+    color: white;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.all-players{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   align-items: center;
+   width: 100%;
+   grid-gap: 34px 17px;
+   margin-left: 120px
+}
+
+.highlight{
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 120px;
+    grid-gap: 140px; 
+    justify-content: center; 
+}
+
+.kick>img{
+    width: 450px;
+}
+.ball {
+    position: relative;
+   transition: transform 01s ease-out 0.1s;
+   top: -102px;
+   left: 13px;
+}
+.top-container:hover .ball {
+    transform: translate(-10px, -200px);
+}
+.all-players{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   width: 80%;
+   grid-gap: 34px 17px;
+   margin-left: 80px
+}
+
+.calendar {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1em;
+    grid-template-rows: 2em repeat(5, 1fr);
+    margin-top: -20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.footer{
+
+    width: 100%;
+    background-color: white;
+    margin-top: 70px;
+}
+.footer img{
+    height: 90px;
+    width: 430px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+}
